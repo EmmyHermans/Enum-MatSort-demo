@@ -6,4 +6,5 @@ export interface ITask {
   name: string;
   assignedUser: string;
   statusNumberEnum: TaskStatusNumberEnum;
+  convertedStatusToNumberEnum?: TaskStatusNumberEnum;
 }

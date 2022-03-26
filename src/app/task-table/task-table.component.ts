@@ -16,6 +16,7 @@ export class TaskTableComponent implements OnInit {
     'name',
     'assignedUser',
     'statusNumberEnum',
+    'convertedStatusToNumberEnum',
   ];
 
   public readonly TaskStatusNumberEnum = TaskStatusNumberEnum;
@@ -30,6 +31,12 @@ export class TaskTableComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.dataSource.data = tasks as ITask[];
+    const convertedTasks = tasks.map((task) => ({
+      convertedStatusToNumberEnum:
+        TaskStatusNumberEnum[task.status as keyof typeof TaskStatusNumberEnum],
+      ...task,
+    }));
+
+    this.dataSource.data = convertedTasks as ITask[];
   }
 }
