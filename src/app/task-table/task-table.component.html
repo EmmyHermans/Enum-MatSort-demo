@@ -32,6 +32,15 @@
         </td>
       </ng-container>
 
+      <ng-container matColumnDef="statusNumberEnum">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          statusNumberEnum
+        </th>
+        <td mat-cell *matCellDef="let task" class="text">
+          {{ TaskStatusNumberEnum[task.statusNumberEnum] }}
+        </td>
+      </ng-container>
+
       <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
       <tr
         mat-row

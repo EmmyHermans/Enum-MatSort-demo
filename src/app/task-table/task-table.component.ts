@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import tasks from './mock-data/tasks.json';
+import { TaskStatusNumberEnum } from './model/task-status.model';
 import { ITask } from './model/task.model';
 
 @Component({
@@ -10,7 +11,14 @@ import { ITask } from './model/task.model';
   styleUrls: ['./task-table.component.scss'],
 })
 export class TaskTableComponent implements OnInit {
-  public readonly displayedColumns = ['status', 'name', 'assignedUser'];
+  public readonly displayedColumns = [
+    'status',
+    'name',
+    'assignedUser',
+    'statusNumberEnum',
+  ];
+
+  public readonly TaskStatusNumberEnum = TaskStatusNumberEnum;
 
   public dataSource = new MatTableDataSource<ITask>();
 

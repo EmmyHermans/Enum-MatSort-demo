@@ -4,3 +4,10 @@ export enum TaskStatus {
   COMPLETED = 'COMPLETED',
   DOES_NOT_APPLY = 'DOES_NOT_APPLY',
 }
+
+export enum TaskStatusNumberEnum {
+  OPEN,
+  IN_PROGRESS,
+  COMPLETED,
+  DOES_NOT_APPLY,
+}

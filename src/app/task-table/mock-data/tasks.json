@@ -3,120 +3,140 @@
     "id": 1,
     "status": "OPEN",
     "name": "Update version number",
-    "assignedUser": "Piet"
+    "assignedUser": "Piet",
+    "statusNumberEnum": 0
   },
   {
     "id": 2,
     "status": "IN_PROGRESS",
     "name": "Setup azure pipelines",
-    "assignedUser": "Jan"
+    "assignedUser": "Jan",
+    "statusNumberEnum": 1
   },
   {
     "id": 3,
     "status": "COMPLETED",
     "name": "Generate base application",
-    "assignedUser": "Lisa"
+    "assignedUser": "Lisa",
+    "statusNumberEnum": 2
   },
   {
     "id": 4,
     "status": "OPEN",
     "name": "Create database users",
-    "assignedUser": "Piet"
+    "assignedUser": "Piet",
+    "statusNumberEnum": 0
   },
   {
     "id": 5,
     "status": "IN_PROGRESS",
     "name": "Setup sonarCloud",
-    "assignedUser": "Lisa"
+    "assignedUser": "Lisa",
+    "statusNumberEnum": 1
   },
   {
     "id": 6,
     "status": "OPEN",
     "name": "Open correct ports",
-    "assignedUser": "Suzanne"
+    "assignedUser": "Suzanne",
+    "statusNumberEnum": 0
   },
   {
     "id": 7,
     "status": "DOES_NOT_APPLY",
     "name": "Arrange VPN access",
-    "assignedUser": "Jan"
+    "assignedUser": "Jan",
+    "statusNumberEnum": 3
   },
   {
     "id": 8,
     "status": "COMPLETED",
     "name": "Create azure users",
-    "assignedUser": "Piet"
+    "assignedUser": "Piet",
+    "statusNumberEnum": 2
   },
   {
     "id": 9,
     "status": "OPEN",
     "name": "Import database data",
-    "assignedUser": "Piet"
+    "assignedUser": "Piet",
+    "statusNumberEnum": 0
   },
   {
     "id": 10,
     "status": "OPEN",
     "name": "Upgrade packages",
-    "assignedUser": "Jan"
+    "assignedUser": "Jan",
+    "statusNumberEnum": 0
   },
   {
     "id": 11,
     "status": "COMPLETED",
     "name": "Install prettier",
-    "assignedUser": null
+    "assignedUser": null,
+    "statusNumberEnum": 2
   },
   {
     "id": 12,
     "status": "IN_PROGRESS",
     "name": "Finish javaScript training",
-    "assignedUser": "Lisa"
+    "assignedUser": "Lisa",
+    "statusNumberEnum": 1
   },
   {
     "id": 13,
     "status": "DOES_NOT_APPLY",
     "name": "Give Jira access to users",
-    "assignedUser": "Suzanne"
+    "assignedUser": "Suzanne",
+    "statusNumberEnum": 3
   },
   {
     "id": 14,
     "status": "OPEN",
     "name": "Setup connection to the database",
-    "assignedUser": null
+    "assignedUser": null,
+    "statusNumberEnum": 0
   },
   {
     "id": 15,
     "status": "COMPLETED",
     "name": "Create git repository",
-    "assignedUser": null
+    "assignedUser": null,
+    "statusNumberEnum": 2
   },
   {
     "id": 16,
     "status": "IN_PROGRESS",
     "name": "Create first table in application",
-    "assignedUser": "Piet"
+    "assignedUser": "Piet",
+    "statusNumberEnum": 1
   },
   {
     "id": 17,
     "status": "IN_PROGRESS",
     "name": "Setup oAuth security",
-    "assignedUser": "Lisa"
+    "assignedUser": "Lisa",
+    "statusNumberEnum": 1
   },
   {
     "id": 18,
     "status": "COMPLETED",
     "name": "Install IDE",
-    "assignedUser": null
+    "assignedUser": null,
+    "statusNumberEnum": 2
   },
   {
     "id": 19,
     "status": "OPEN",
     "name": "Create user stories for additional functionality",
-    "assignedUser": null
+    "assignedUser": null,
+    "statusNumberEnum": 0
   },
   {
     "id": 20,
     "status": "OPEN",
     "name": "Pick color scheme",
-    "assignedUser": "Piet"
+    "assignedUser": "Piet",
+    "statusNumberEnum": 0
   }
 ]
