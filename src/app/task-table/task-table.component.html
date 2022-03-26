@@ -1,0 +1,43 @@
+<div class="task-table-component-container">
+  <aside class="top-bar">
+    <h3 id="pageTitle" class="page-title">Task table</h3>
+  </aside>
+  <div class="task-table-container">
+    <table
+      class="task-table"
+      mat-table
+      [dataSource]="dataSource"
+      matSort
+      matSortActive="name"
+      matSortDirection="asc"
+    >
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+        <td mat-cell *matCellDef="let task" class="text">
+          {{ task.status }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+        <td mat-cell *matCellDef="let task" class="text">
+          {{ task.name }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="assignedUser">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Assigned user</th>
+        <td mat-cell *matCellDef="let task" class="text">
+          {{ task.assignedUser }}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+      <tr
+        mat-row
+        class="hoverable-row"
+        *matRowDef="let task; columns: displayedColumns"
+      ></tr>
+    </table>
+  </div>
+</div>

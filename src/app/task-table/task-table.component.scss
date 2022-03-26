@@ -1,0 +1,25 @@
+.task-table-component-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  height: 3em;
+  width: 100%;
+  background-color: #db2a39;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 5em;
+}
+
+.task-table-container {
+  height: calc(100% - 3em);
+  overflow: auto;
+}
+
+.task-table {
+  width: 100%;
+}
